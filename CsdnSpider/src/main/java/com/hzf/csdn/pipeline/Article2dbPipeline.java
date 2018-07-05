@@ -13,6 +13,7 @@ import us.codecraft.webmagic.Task;
 import us.codecraft.webmagic.pipeline.Pipeline;
 import us.codecraft.webmagic.selector.Html;
 
+import java.util.Date;
 import java.util.regex.Pattern;
 
 public class Article2dbPipeline implements Pipeline {
@@ -38,21 +39,22 @@ public class Article2dbPipeline implements Pipeline {
             Article model = new Article();
             try {
                 model.setId(article.attr("data-articleid"));
-                model.setUrl(article.getElementsByTag("a").attr("href"));
+                model.setArticleUrl(article.getElementsByTag("a").attr("href"));
                 Elements spans = article.getElementsByTag("span");
                 model.setAuthorNickname(authorNickname);
-                model.setOriginal(spans.get(0).text().trim().equals("原"));
+                model.setIsOriginal(spans.get(0).text().trim());
                 model.setDate(spans.get(1).text());
                 Pattern p = Pattern.compile(ConfigUtils.getProperty("numberRegEx"));
                 model.setReadCount(p.matcher(spans.get(2).text()).replaceAll("").trim());
                 model.setDiscussCount(p.matcher(spans.get(3).text()).replaceAll("").trim());
                 model.setTitle(article.getElementsByTag("a").get(0).childNode(2).toString().trim());
-                repository.save(model);
+                model.setCreateDate(new Date());
+                model = repository.save(model);
+                logger.error("save article succ! authorNickname:" + model.getAuthorNickname() + " id:" + model.getId());
             } catch (Exception e) {
                 logger.error(ThrowUtils.printStackTraceToString(e));
             }
         }
-
 
     }
 }

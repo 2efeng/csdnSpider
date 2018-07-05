@@ -12,7 +12,6 @@ public interface AuthorRepository extends PagingAndSortingRepository<Author, Int
     @Query(value = "from Author user where user.bloggerUrl = ?1")
     List<Author> findAuthorsByBloggerUrl(String url);
 
-    @Query(value = "from Author user where user.nickname = ?1")
-    List<Author> findAuthorsByNickname(String name);
+
 }
 

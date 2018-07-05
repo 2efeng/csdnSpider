@@ -4,6 +4,7 @@ import com.hzf.csdn.App;
 import com.hzf.csdn.bean.Author;
 import com.hzf.csdn.dao.AuthorRepository;
 import com.hzf.csdn.message.AuthorUrlMsg;
+import com.hzf.csdn.utils.ThrowUtils;
 import org.apache.log4j.Logger;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -41,13 +42,12 @@ public class Author2dbPipeline implements Pipeline {
             author.setReadCount(Integer.parseInt(ddTag.getElementsByClass("count_l fr").first().child(0).text()));
             author.setNickname(ddTag.getElementsByClass("attention").first().child(0).attr("value"));
             author.setCreateDate(new Date());
-            author.setUpdateDate(new Date());
             try {
                 author = repository.save(author);
-                logger.info("save author succ! id:" + author.getId());
+                logger.info("save author succ! nickname:" + author.getNickname() + " id:" + author.getId());
                 AuthorUrlMsg.setAuthorUrl(author.getBloggerUrl());
             } catch (Exception ex) {
-                logger.error(ex);
+                logger.error(ThrowUtils.printStackTraceToString(ex));
             }
         }
     }

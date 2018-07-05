@@ -30,7 +30,7 @@ public class ConfigUtils {
             props = new Properties();
             props.load(in);
         } catch (Exception e) {
-            logger.error(e);
+            logger.error(ThrowUtils.printStackTraceToString(e));
             e.printStackTrace();
         }
     }

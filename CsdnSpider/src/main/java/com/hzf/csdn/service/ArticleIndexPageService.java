@@ -33,10 +33,8 @@ public class ArticleIndexPageService implements PageProcessor {
                 int listTotal = Integer.parseInt(script.data().substring(beginIdx, endIdx).trim());
                 int pageList = listTotal % pageSize == 0 ? listTotal / pageSize : listTotal / pageSize + 1;
                 String nickname = page.getUrl().toString().split("/")[3];
-                Author author = repository.findAuthorsByNickname(nickname).get(0);
-                if (author == null) break;
                 Spider spider = Spider.create(new ArticlePageService())
-                        .addPipeline(new Article2dbPipeline(author.getNickname()));
+                        .addPipeline(new Article2dbPipeline(nickname));
                 for (int i = 1; i <= pageList; i++) {
                     spider.addUrl(baseUrl + "/" + i);
                 }
@@ -51,6 +49,7 @@ public class ArticleIndexPageService implements PageProcessor {
     public Site getSite() {
         return Site.me().setDomain(ConfigUtils.getProperty("csdn.root"))
                 .setSleepTime(1000)
+                .setCycleRetryTimes(3)
                 .setUserAgent("Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36")
                 .setUseGzip(true);
     }
