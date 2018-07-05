@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="486b5e3c-6f79-466f-a3ad-73dcef2855a2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/bean/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/bean/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/bean/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/bean/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/dao/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/dao/AuthorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/pipeline/Article2dbPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/pipeline/Article2dbPipeline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/pipeline/Author2dbPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/pipeline/Author2dbPipeline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/service/ArticleIndexPageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/service/ArticleIndexPageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/service/ArticlePageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/service/ArticlePageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/service/AuthorIndexPageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/service/AuthorIndexPageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/service/AuthorPageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/service/AuthorPageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/utils/ConfigUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hzf/csdn/utils/ConfigUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,8 +24,8 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hzf/csdn/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="51" column="59" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
+            <state relative-caret-position="44">
+              <caret line="23" column="60" lean-forward="true" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1192#1193#0" expanded="true" />
@@ -66,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+            <state relative-caret-position="158">
+              <caret line="76" column="35" lean-forward="true" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -96,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigUtils.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConfigUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hzf/csdn/utils/ConfigUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="43" column="5" selection-start-line="38" selection-start-column="3" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="293">
+              <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,9 +168,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hzf/csdn/service/AuthorIndexPageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hzf/csdn/service/AuthorPageService.java" />
         <option value="$PROJECT_DIR$/config/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hzf/csdn/utils/ConfigUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hzf/csdn/App.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hzf/csdn/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hzf/csdn/utils/ConfigUtils.java" />
       </list>
     </option>
   </component>
@@ -461,12 +450,12 @@
       <workItem from="1530598413925" duration="5149000" />
       <workItem from="1530616836424" duration="177000" />
       <workItem from="1530617035076" duration="1661000" />
-      <workItem from="1530798631661" duration="2033000" />
+      <workItem from="1530798631661" duration="2214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69732000" />
+    <option name="totallyTimeSpent" value="69913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1486" height="878" extended-state="6" />
@@ -478,7 +467,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32928476" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="1" visible="true" weight="0.14915967" />
+      <window_info anchor="right" id="Maven Projects" order="1" visible="true" weight="0.14915967" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" />
       <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.085020244" />
@@ -487,7 +476,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19957983" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.19957983" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info id="Learn" order="4" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
@@ -881,20 +870,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hzf/csdn/utils/ConfigUtils.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="43" column="5" selection-start-line="38" selection-start-column="3" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="158">
+          <caret line="76" column="35" lean-forward="true" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hzf/csdn/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="51" column="59" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
+        <state relative-caret-position="44">
+          <caret line="23" column="60" lean-forward="true" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1192#1193#0" expanded="true" />
@@ -905,10 +891,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hzf/csdn/utils/ConfigUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+        <state relative-caret-position="293">
+          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
