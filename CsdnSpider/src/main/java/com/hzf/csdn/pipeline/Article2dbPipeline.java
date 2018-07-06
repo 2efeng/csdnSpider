@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 public class Article2dbPipeline implements Pipeline {
 
     private static Logger logger = Logger.getLogger(Article2dbPipeline.class.getName());
-    private ArticleRepository repository = App.getArticleRepository();
+    private ArticleRepository repository = ConfigUtils.getContext().getBean(ArticleRepository.class);
 
     private String authorNickname;
 

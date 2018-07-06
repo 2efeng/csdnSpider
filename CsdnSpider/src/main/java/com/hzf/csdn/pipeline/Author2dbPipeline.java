@@ -4,6 +4,7 @@ import com.hzf.csdn.App;
 import com.hzf.csdn.bean.Author;
 import com.hzf.csdn.dao.AuthorRepository;
 import com.hzf.csdn.message.AuthorUrlMsg;
+import com.hzf.csdn.utils.ConfigUtils;
 import com.hzf.csdn.utils.ThrowUtils;
 import org.apache.log4j.Logger;
 import org.jsoup.nodes.Element;
@@ -18,7 +19,7 @@ import java.util.Date;
 public class Author2dbPipeline implements Pipeline {
 
     private static Logger logger = Logger.getLogger(Author2dbPipeline.class.getName());
-    private AuthorRepository repository = App.getAuthorRepository();
+    private AuthorRepository repository = ConfigUtils.getContext().getBean(AuthorRepository.class);
 
     @Override
     public void process(ResultItems resultItems, Task task) {

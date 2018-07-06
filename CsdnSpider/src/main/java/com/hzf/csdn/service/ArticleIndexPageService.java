@@ -1,8 +1,5 @@
 package com.hzf.csdn.service;
 
-import com.hzf.csdn.App;
-import com.hzf.csdn.bean.Author;
-import com.hzf.csdn.dao.AuthorRepository;
 import com.hzf.csdn.pipeline.Article2dbPipeline;
 import com.hzf.csdn.utils.ConfigUtils;
 import org.jsoup.nodes.Element;
@@ -13,8 +10,6 @@ import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.processor.PageProcessor;
 
 public class ArticleIndexPageService implements PageProcessor {
-
-    private AuthorRepository repository = App.getAuthorRepository();
 
     @Override
     public void process(Page page) {
