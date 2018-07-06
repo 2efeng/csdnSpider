@@ -50,7 +50,7 @@ public class Article2dbPipeline implements Pipeline {
                 model.setTitle(article.getElementsByTag("a").get(0).childNode(2).toString().trim());
                 model.setCreateDate(new Date());
                 model = repository.save(model);
-                logger.error("save article succ! authorNickname:" + model.getAuthorNickname() + " id:" + model.getId());
+                logger.info("save article succ! authorNickname:" + model.getAuthorNickname() + " id:" + model.getId());
             } catch (Exception e) {
                 logger.error(ThrowUtils.printStackTraceToString(e));
             }
