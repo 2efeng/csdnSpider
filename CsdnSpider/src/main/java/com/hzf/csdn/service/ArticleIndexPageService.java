@@ -33,6 +33,7 @@ public class ArticleIndexPageService implements PageProcessor {
                 for (int i = 1; i <= pageList; i++) {
                     spider.addUrl(baseUrl + "/" + i);
                 }
+                spider.thread(3);
                 spider.isExitWhenComplete();
                 spider.run();
                 break;
@@ -43,7 +44,7 @@ public class ArticleIndexPageService implements PageProcessor {
     @Override
     public Site getSite() {
         return Site.me().setDomain(ConfigUtils.getProperty("csdn.root"))
-                .setSleepTime(1000)
+                .setSleepTime(200)
                 .setCycleRetryTimes(3)
                 .setUserAgent("Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36")
                 .setUseGzip(true);
